@@ -1,13 +1,25 @@
-# artificial_intelligence_js
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/ECYS-FIUSAC/fortranpeg/actions)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses/MIT)
+![programming_language: JavaScript](https://img.shields.io/badge/programming_language-JavaScript-blue)
 
-[Reflex Agent](https://luisespino.github.io/artificial_intelligence_js/01_reflex_agent.html)
+# Artificial Intelligence 
 
-[Breadth and Depth Search](https://luisespino.github.io/artificial_intelligence_js/02_breadth_depth_search.html)
+### Examples of Programming with plain JavaScript
 
-[Uniform Cost Search](https://luisespino.github.io/artificial_intelligence_js/03_uniform_cost.html)
+#### Simple reflex agents:
 
-[Best First Search](https://luisespino.github.io/artificial_intelligence_js/04_bestfirst.html)
+[Vacuum cleaner](https://luisespino.github.io/artificial-intelligence-js/01-simple-reflex-agent/cleaner/)
 
-[AStar Search](https://luisespino.github.io/artificial_intelligence_js/05_astar.html)
+[Simple chatbot](https://luisespino.github.io/artificial-intelligence-js/01-simple-reflex-agent/chatbot/)
 
-[Genetic Algorithm](https://luisespino.github.io/artificial_intelligence_js/06_ag.html)
+#### Other implementations
+
+[Breadth and Depth Search](https://luisespino.github.io/artificial-intelligence-js/02_breadth_depth_search.html)
+
+[Uniform Cost Search](https://luisespino.github.io/artificial-intelligence-js/03_uniform_cost.html)
+
+[Best First Search](https://luisespino.github.io/artificial-intelligence-js/04_bestfirst.html)
+
+[AStar Search](https://luisespino.github.io/artificial-intelligence-js/05_astar.html)
+
+[Genetic Algorithm](https://luisespino.github.io/artificial-intelligence-js/06_ag.html)
