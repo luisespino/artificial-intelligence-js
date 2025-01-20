@@ -7,7 +7,7 @@ const botResponses = {
     "thanks": "¡De nada! Si necesitas algo más, pregúntame.",
     "questions": "Puedo responderte a palabras clave.",
     "chatbot": "Es software que simula mantener una conversación.",
-    "ai": "Es un campo de ciencias de la computación que resuelve un problema de manera automática mediante la lógica."
+    "ai": "Es un campo de ciencias de la computación que resuelve un problema de manera automática mediante la lógica.",
 };
 
 const synonymGroups = {
