@@ -7,7 +7,7 @@ const botResponses = {
     "thanks": "¡De nada! Si necesitas algo más, pregúntame.",
     "questions": "Puedo responderte a palabras clave.",
     "chatbot": "Es software que simula mantener una conversación.",
-    "ai": "Es un campo de ciencias de la computación que resuelve un problema de manera automática mediante la lógica.",
+    "ai": "Es un campo de ciencias de la computación que resuelve un problema de manera automática mediante la lógica."
 };
 
 const synonymGroups = {
@@ -19,7 +19,7 @@ const synonymGroups = {
     thanks: ["gracias", "muchas gracias", "ok"],
     questions: ["qué preguntas", "qué tipo de preguntas", "qué puedes hacer", "que puedes hacer", "preguntas"],
     chatbot: ["chatbot", "chat"],
-    ai: ["ia", "inteligencia artificial"],
+    ai: ["ia", "inteligencia artificial"]
 };
 
 function processUserInput() {
@@ -59,7 +59,7 @@ function displayMessage(message, sender) {
 
 function getBotResponse(userInput) {
     const input = userInput.toLowerCase();
-ia
+    
     for (const key in synonymGroups) {
         for (const synonym of synonymGroups[key]) {
             if (input.includes(synonym)) {
