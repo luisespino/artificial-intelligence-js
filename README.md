@@ -12,9 +12,13 @@
 
 [Simple chatbot](https://luisespino.github.io/artificial-intelligence-js/01-simple-reflex-agent/chatbot/)
 
+#### Uniformed search:
+
+[Breadth and Depth Search](https://luisespino.github.io/artificial-intelligence-js/02-uninformed-search/breadth-depth-search.html)
+
+
 #### Other implementations
 
-[Breadth and Depth Search](https://luisespino.github.io/artificial-intelligence-js/02_breadth_depth_search.html)
 
 [Uniform Cost Search](https://luisespino.github.io/artificial-intelligence-js/03_uniform_cost.html)
 
