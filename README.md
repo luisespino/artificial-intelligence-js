@@ -12,18 +12,19 @@
 
 [Simple chatbot](https://luisespino.github.io/artificial-intelligence-js/01-simple-reflex-agent/chatbot/)
 
-#### Uniformed search:
+#### Uninformed search:
 
 [Breadth and Depth Search](https://luisespino.github.io/artificial-intelligence-js/02-uninformed-search/breadth-depth-search.html)
 
-
-#### Other implementations
-
-
 [Uniform Cost Search](https://luisespino.github.io/artificial-intelligence-js/03_uniform_cost.html)
+
+
+### Informed search:
 
 [Best First Search](https://luisespino.github.io/artificial-intelligence-js/04_bestfirst.html)
 
 [AStar Search](https://luisespino.github.io/artificial-intelligence-js/05_astar.html)
+
+#### Genetic algorithm
 
 [Genetic Algorithm](https://luisespino.github.io/artificial-intelligence-js/06_ag.html)
