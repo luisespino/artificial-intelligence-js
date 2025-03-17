@@ -1,6 +1,15 @@
 // MIT License
 // Copyright (c) 2021 Luis Espino
 
+// revolve Fisher-Yates
+function revolve(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+}
+
 function heuristic(start, end) {
 	var tiles_out = 0
 	for (var i = 0; i < start.length; i++){
@@ -57,8 +66,8 @@ function genetic(end){
         child.push(Math.floor((population[p1]+population[p2])/2))
         child.push(Math.floor(Math.abs(2*population[p1]-population[p2])))
         child.push(Math.floor(Math.abs(population[p1]-population[p2])))
-        child.push(Math.floor(population[p1]*1.2))
-        child.push(Math.floor(population[p1]*.8))
+        child.push(Math.floor(population[p1]*1.1))
+        child.push(Math.floor(population[p1]*.9))
         child.push(Math.floor(population[p1]*.5))
         document.getElementById("log").innerHTML+="<br>Crossover: "+child
 
@@ -75,7 +84,7 @@ function genetic(end){
         population[1] = child[0]
         population[2] = population[p2]
         population[3] = child[1]
-        population = population.sort((a, b) => 0.5 - Math.random());
+        population = revolve(population)
         document.getElementById("log").innerHTML+="<br>Replacement: "+population
         const sum = population.reduce((a, b) => Math.abs(end-a) + Math.abs(end-b), 0);
         //const avg = (sum / population.length) || 0;
