@@ -7,7 +7,7 @@
         joinArrays
     } = await import("https://mlearnjs.github.io/mlearnjs/dist/mlearn.mjs");
       
-    var xTrain = [[0], [1], [2], [3], [4], [5], [6], [7], [8], [9]];
+    var xTrain = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
     var yTrain = [1, 4, 1, 5, 3, 7, 2, 7, 4, 9];
   
     const model = new LinearRegression();
