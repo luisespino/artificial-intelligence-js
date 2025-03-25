@@ -11,11 +11,11 @@
     var yTrain = [1, 4, 1, 5, 3, 7, 2, 7, 4, 9];
   
     const model = new LinearRegression();
-    model.fit(xTrain, yTrain)
-    yPredict = model.predict(xTrain)
+    model.fit(xTrain, yTrain);
+    yPredict = model.predict(xTrain);
 
-    document.getElementById("log").innerHTML+='<br>X Train:   '+xTrain+'<br>Y Train:   '+yTrain+'<br>Y Predict: '+yPredict
-    var a = joinArrays('x',xTrain,'yTrain',yTrain,'yPredict',yPredict)
+    document.getElementById("log").innerHTML+='<br>X Train:   '+xTrain+'<br>Y Train:   '+yTrain+'<br>Y Predict: '+yPredict;
+    var a = joinArrays('x',xTrain,'yTrain',yTrain,'yPredict',yPredict);
 
     google.charts.load('current', {'packages':['corechart']});
     google.charts.setOnLoadCallback(drawChart);
