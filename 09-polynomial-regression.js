@@ -1,9 +1,9 @@
 async function fit_predict_draw() {
 
-    const { Polynomial, joinArrays } = await import('https://cdn.jsdelivr.net/gh/mlearnjs/mlearnjs.github.io@main/dist/mlearn.mjs?v=' + new Date().getTime());
+    const { PolynomialRegression, joinArrays } = await import('https://cdn.jsdelivr.net/gh/mlearnjs/mlearnjs.github.io@main/dist/mlearn.mjs?v=' + new Date().getTime());
 
-    const myPolynomialRegression = await PolynomialRegression(); 
-    const model = new myPolynomialRegression(2);
+    const myPolynomialRegression = await PolynomialRegression(3); 
+    const model = new myPolynomialRegression(3);
 
     const X = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
     const y = [1, 4, 1, 5, 3, 7, 2, 7, 4, 9];
@@ -25,7 +25,7 @@ async function fit_predict_draw() {
         var data = google.visualization.arrayToDataTable(arr);
         var options = {
             seriesType : 'scatter',
-            series: {1: {type: 'function'}}
+            series: {1: {curveType: 'function'}}
         };  
         var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
         chart.draw(data, options);         
