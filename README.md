@@ -25,6 +25,10 @@
 
 [AStar Search](https://luisespino.github.io/artificial-intelligence-js/05_astar.html)
 
+[Steepest Ascent Search](https://luisespino.github.io/artificial-intelligence-js/06_colinas.html)
+
 #### Genetic algorithm
 
 [Genetic Algorithm](https://luisespino.github.io/artificial-intelligence-js/06_ag.html)
+
+
