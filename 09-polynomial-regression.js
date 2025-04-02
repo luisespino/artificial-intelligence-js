@@ -1,6 +1,6 @@
 async function fit_predict_draw() {
 
-    const { PolynomialRegression, joinArrays } = await import('https://cdn.jsdelivr.net/gh/mlearnjs/mlearnjs.github.io@main/dist/mlearn.mjs?v=' + new Date().getTime());
+    const { PolynomialRegression, joinArrays } = await import('https://cdn.jsdelivr.net/gh/mlearnjs/mlearnjs.github.io@main/dist/mlearn.mjs');
 
     const myPolynomialRegression = await PolynomialRegression(3); 
     const model = new myPolynomialRegression(3);

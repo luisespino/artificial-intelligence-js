@@ -1,6 +1,6 @@
 async function fit_predict_draw() {
 
-    const { LinearRegression, joinArrays } = await import('https://cdn.jsdelivr.net/gh/mlearnjs/mlearnjs.github.io@main/dist/mlearn.mjs?v=' + new Date().getTime());
+    const { LinearRegression, joinArrays } = await import('https://cdn.jsdelivr.net/gh/mlearnjs/mlearnjs.github.io@main/dist/mlearn.mjs');
 
     const myLinearRegression = await LinearRegression(); 
     const model = new myLinearRegression();
