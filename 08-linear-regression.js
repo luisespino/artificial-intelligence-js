@@ -17,15 +17,19 @@ async function fit_predict_draw() {
 
     const log = document.getElementById('log');
     const yPred = yPredict.map(num => parseFloat(num.toFixed(2)));
+    const mse = model.mse(y, yPredict);
+    const r2 = model.r2(y, yPredict);
     log.innerHTML = 'X: '+X+'<br>y: '+y+'<br>yPredict: '+yPred;
+    log.innerHTML += '<br>MSE: '+mse+'<br>R2: '+r2;
 
     google.charts.load('current', {'packages':['corechart']});
     google.charts.setOnLoadCallback(drawChart);    
     function drawChart() {
         var data = google.visualization.arrayToDataTable(arr);
         var options = {
-            seriesType : 'scatter',
-            series: {1: {type: 'line'}}
+            series: {
+                0: {type: 'scatter'},
+                1: {type: 'line'}}            
         };  
         var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
         chart.draw(data, options);         
