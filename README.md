@@ -19,7 +19,7 @@
 [Uniform Cost Search](https://luisespino.github.io/artificial-intelligence-js/03_uniform_cost.html)
 
 
-### Informed search:
+#### Informed search:
 
 [Best First Search](https://luisespino.github.io/artificial-intelligence-js/04_bestfirst.html)
 
@@ -30,5 +30,9 @@
 #### Genetic algorithm
 
 [Genetic Algorithm](https://luisespino.github.io/artificial-intelligence-js/06_ag.html)
+
+#### Machine Learning
+
+[Linear Regression](https://luisespino.github.io/artificial-intelligence-js/08-linear-regression.html)
 
 
