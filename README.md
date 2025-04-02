@@ -37,4 +37,5 @@
 
 [Polynomial Regression](https://luisespino.github.io/artificial-intelligence-js/09-polynomial-regression.html)
 
+[Gaussian Naive Bayes](https://luisespino.github.io/artificial-intelligence-js/10-gaussian-nb.html)
 
