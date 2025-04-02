@@ -15,6 +15,10 @@ async function fit_predict_draw() {
     const myjoinArrays = await joinArrays();
     const arr = myjoinArrays('x', X, 'y', y, 'yPredict', yPredict);
 
+    const log = document.getElementById('log');
+    const yPred = yPredict.map(num => parseFloat(num.toFixed(2)));
+    log.innerHTML = 'X: '+X+'<br>y: '+y+'<br>yPredict: '+yPred;
+
     google.charts.load('current', {'packages':['corechart']});
     google.charts.setOnLoadCallback(drawChart);    
     function drawChart() {
