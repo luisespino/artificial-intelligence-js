@@ -43,7 +43,9 @@ async function fit_predict() {
 
     const encYPredict = model.predict(features)
     const yPredict = encoder.inverseTransform(encYPredict);
-    const accuracy = accuracyScore(encLab, encYPredict);
+
+    const myAccuracyScore = await accuracyScore();
+    const accuracy = myAccuracyScore(encLab, encYPredict);
 
     const log = document.getElementById('log');
     log.innerHTML = '<br><br>LabelEncoder:<br>'+JSON.stringify(features, null, 2);
