@@ -35,4 +35,6 @@
 
 [Linear Regression](https://luisespino.github.io/artificial-intelligence-js/08-linear-regression.html)
 
+[Polynomial Regression](https://luisespino.github.io/artificial-intelligence-js/09-polynomial-regression.html)
+
 
