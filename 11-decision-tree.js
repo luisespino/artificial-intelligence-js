@@ -1,6 +1,5 @@
-
 async function fit_predict() {
-    const { DecisionTreeClassifier, LabelEncoder, accuracyScore } = await import('https://mlearnjs.github.io/dist/mlearn.mjs');
+    const { DecisionTreeClassifier, LabelEncoder, accuracyScore } = await import('https://luisespino.github.io/mlearnjs/mlearn.mjs');
 
     const outlook = ['sunny', 'sunny', 'overcast', 'rain', 'rain', 'rain', 'overcast',
         'sunny', 'sunny', 'rain', 'sunny', 'overcast', 'overcast', 'rain'];

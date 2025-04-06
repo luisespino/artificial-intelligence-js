@@ -1,7 +1,5 @@
 async function fit_predict() {
-
-    //const { GaussianNB, LabelEncoder, accuracyScore } = await import('https://cdn.jsdelivr.net/gh/mlearnjs/mlearnjs.github.io@latest/dist/mlearn.mjs');
-    const { GaussianNB, LabelEncoder, accuracyScore } = await import('https://mlearnjs.github.io/dist/mlearn.mjs');
+    const { GaussianNB, LabelEncoder, accuracyScore } = await import('https://luisespino.github.io/mlearnjs/mlearn.mjs');
 
     
 
