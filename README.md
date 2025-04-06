@@ -39,3 +39,4 @@
 
 [Gaussian Naive Bayes](https://luisespino.github.io/artificial-intelligence-js/10-gaussian-nb.html)
 
+[Decision Tree](https://luisespino.github.io/artificial-intelligence-js/11-decision-tree.html)
