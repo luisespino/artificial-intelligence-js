@@ -30,7 +30,7 @@ async function fit_predict() {
 
     const features = encOut.map((_, i) => [encOut[i], encTem[i], encHum[i], encWin[i]]);
      
-    const myMLPClassifier = await MLPClassifier(); 
+    const myMLPClassifier = await MLPClassifier(4, 5, 2); 
     const model = new myMLPClassifier();
 
     
