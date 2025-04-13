@@ -35,14 +35,17 @@ async function fit_predict() {
 
     
     model.fit(features, encLab);
-
-    let encYPredict = model.predict(features);
-    //console.log(typeof encYPredict);
-    //console.log(encYPredict.length); 
-    //encYPredict = encYPredict[0];
-    //console.log(typeof encYPredict);
+    const encYPredict = features.map(f => {
+        const output = model.predict(f);
+        if (output.length === 1) {
+          // Binaria: redondear
+          return Math.round(output[0]);
+        } else {
+          // Multiclase: elegir la clase con mayor probabilidad
+          return output.indexOf(Math.max(...output));
+        }
+      });
     const yPredict = encoder.inverseTransform(encYPredict);
-    console.log(typeof yPredict);
 
 
     const myAccuracyScore = await accuracyScore();
