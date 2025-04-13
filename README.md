@@ -40,3 +40,5 @@
 [Gaussian Naive Bayes](https://luisespino.github.io/artificial-intelligence-js/10-gaussian-nb.html)
 
 [Decision Tree](https://luisespino.github.io/artificial-intelligence-js/11-decision-tree.html)
+
+[MLP Classifier](https://luisespino.github.io/artificial-intelligence-js/13-mlp-classifier.html)

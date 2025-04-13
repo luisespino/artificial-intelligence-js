@@ -1,5 +1,5 @@
 async function fit_predict() {
-    const { DecisionTreeClassifier, LabelEncoder, accuracyScore } = await import('https://luisespino.github.io/mlearnjs/mlearn.mjs');
+    const { MLPClassifier, LabelEncoder, accuracyScore } = await import('https://luisespino.github.io/mlearnjs/mlearn.mjs');
 
     const outlook = ['sunny', 'sunny', 'overcast', 'rain', 'rain', 'rain', 'overcast',
         'sunny', 'sunny', 'rain', 'sunny', 'overcast', 'overcast', 'rain'];
@@ -30,8 +30,8 @@ async function fit_predict() {
 
     const features = encOut.map((_, i) => [encOut[i], encTem[i], encHum[i], encWin[i]]);
      
-    const myDecisionTree = await DecisionTreeClassifier(); 
-    const model = new myDecisionTree();
+    const myMLPClassifier = await MLPClassifier(); 
+    const model = new myMLPClassifier();
 
     
     model.fit(features, encLab);
@@ -46,8 +46,6 @@ async function fit_predict() {
     log.innerHTML = '<br><br>LabelEncoder:<br>'+JSON.stringify(features, null, 2);
     log.innerHTML += '<br><br>Predict:<br>'+ JSON.stringify(yPredict, null, 2);
     log.innerHTML += '<br><br>AccuracyScore: '+accuracy;
-    log.innerHTML += '<br><br><strong>Descriptive tree:</strong><br>'+model.printTree(model.tree);
-    log.innerHTML += '<br><br><strong>Gain track:</strong><br>'+model.gain;
 }
 
 function showTable(table) {
