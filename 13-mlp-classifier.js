@@ -34,7 +34,7 @@ async function fit_predict() {
     const model = new myMLPClassifier();
 
     
-    model.train(features, encLab);
+    model.fit(features, encLab);
 
     const encYPredict = model.predict(features)
     const yPredict = encoder.inverseTransform(encYPredict);
