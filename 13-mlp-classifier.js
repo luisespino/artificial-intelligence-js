@@ -36,7 +36,11 @@ async function fit_predict() {
     
     model.fit(features, encLab);
 
-    const encYPredict = model.predict(features)[0];
+    let encYPredict = model.predict(features);
+    console.log(typeof encYPredict);
+    console.log(encYPredict.length); 
+    encYPredict = encYPredict[0];
+    console.log(typeof encYPredict);
     const yPredict = encoder.inverseTransform(encYPredict);
 
     const myAccuracyScore = await accuracyScore();
