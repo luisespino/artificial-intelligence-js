@@ -18,7 +18,7 @@ async function fit_predict() {
     const myMLPClassifier = await MLPClassifier(); 
     const model = new myMLPClassifier(2, 4, 1);
 
-    
+
     model.fit(X, y1);
     let yPredict = X.map(f => {
         const output = model.predict(f);
@@ -57,10 +57,11 @@ async function fit_predict() {
     log.innerHTML += '; yPredict = '+ JSON.stringify(yPredict, null, 2);
     log.innerHTML += '; AccuracyScore: '+accuracy;
 
+    const modelXOR = new myMLPClassifier(2, 5, 1);
 
-    model.fit(X, y3);
+    modelXOR.fit(X, y3);
     yPredict = X.map(f => {
-        const output = model.predict(f);
+        const output = modelXOR.predict(f);
         if (output.length === 1) {
           // Binaria: redondear
           return Math.round(output[0]);
