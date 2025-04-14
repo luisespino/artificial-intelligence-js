@@ -15,7 +15,16 @@ async function fit_predict() {
 
     
     model.fit(X, y);
-    const yPredict = model.predict(X);
+    const yPredict = features.map(f => {
+        const output = model.predict(f);
+        if (output.length === 1) {
+          // Binaria: redondear
+          return Math.round(output[0]);
+        } else {
+          // Multiclase: elegir la clase con mayor probabilidad
+          return output.indexOf(Math.max(...output));
+        }
+      });
 
     const myAccuracyScore = await accuracyScore();
     const accuracy = myAccuracyScore(y, yPredict);
@@ -27,33 +36,5 @@ async function fit_predict() {
     log.innerHTML += '<br><br>AccuracyScore: '+accuracy;
 }
 
-function showTable(table) {
-    let container = document.getElementById('table-container');
-
-    // Crear el elemento de la tabla
-    let tableElement = document.createElement('table');
-
-    // Crear la cabecera de la tabla
-    let header = tableElement.createTHead();
-    let headerRow = header.insertRow();
-    let headers = ['Outlook', 'Temp', 'Humidity', 'Windy', 'Label'];
-    headers.forEach(headerText => {
-        let cell = headerRow.insertCell();
-        cell.textContent = headerText;
-    });
-
-    // Crear el cuerpo de la tabla
-    let body = tableElement.createTBody();
-    table.forEach(rowData => {
-        let row = body.insertRow();
-        rowData.forEach(cellData => {
-            let cell = row.insertCell();
-            cell.textContent = cellData;
-        });
-    });
-
-    // Insertar la tabla en el contenedor
-    container.appendChild(tableElement);
-}
 
 fit_predict();
