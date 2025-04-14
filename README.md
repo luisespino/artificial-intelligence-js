@@ -41,4 +41,6 @@
 
 [Decision Tree](https://luisespino.github.io/artificial-intelligence-js/11-decision-tree.html)
 
+[MLP Classifier Logic Gates ](https://luisespino.github.io/artificial-intelligence-js/12-mlp-classifier.html)
+
 [MLP Classifier](https://luisespino.github.io/artificial-intelligence-js/13-mlp-classifier.html)
