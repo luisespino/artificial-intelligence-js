@@ -15,7 +15,7 @@ async function fit_predict() {
 
     
     model.fit(X, y);
-    const yPredict = features.map(f => {
+    const yPredict = X.map(f => {
         const output = model.predict(f);
         if (output.length === 1) {
           // Binaria: redondear
