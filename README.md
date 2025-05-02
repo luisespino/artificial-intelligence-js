@@ -46,3 +46,5 @@
 [MLP Classifier](https://luisespino.github.io/artificial-intelligence-js/13-mlp-classifier.html)
 
 [KMeans Cluster Classifier](https://luisespino.github.io/artificial-intelligence-js/14-kmeans-classifier.html)
+
+[KNearest Neighbors Classifier](https://luisespino.github.io/artificial-intelligence-js/15-neighbors-classifier.html)
