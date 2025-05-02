@@ -23,7 +23,7 @@ async function fit_predict() {
     const myKNearestNeighbors = await KNearestNeighbors(); 
     const model = new myKNearestNeighbors();
 
-    model.fit(X);
+    model.fit(X, y);
 
     const yPredict = model.predict(X);
     
